@@ -1,0 +1,16 @@
+{
+    "name": "pckg-app/pendo-api",
+    "description": "PHP API for Pendo fiscalization service",
+    "homepage": "https://github.com/pckg-app/pendo-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bojan Rajh",
+            "email": "schtr4jh@schtr4jh.net"
+        }
+    ],
+    "require": {
+        "pckg-app/api": "dev-master"
+    },
+    "minimum-stability": "dev"
+}
