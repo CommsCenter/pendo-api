@@ -6,6 +6,11 @@ use Pckg\Pendo\Api\Endpoint\Company;
 use Pckg\Pendo\Api\Endpoint\Device;
 use Pckg\Pendo\Api\Endpoint\Invoice;
 
+/**
+ * Class Api
+ *
+ * @package Pckg\Pendo\Api
+ */
 class Api extends PckgApi
 {
 
@@ -28,16 +33,25 @@ class Api extends PckgApi
         ];
     }
 
+    /**
+     * @return Company
+     */
     public function company()
     {
         return new Company($this);
     }
 
+    /**
+     * @return Device
+     */
     public function device()
     {
         return new Device($this);
     }
 
+    /**
+     * @return Invoice
+     */
     public function invoice()
     {
         return new Invoice($this);
