@@ -304,12 +304,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg-app/api.git",
-                "reference": "dca1fdd98d247d2a05922347ae8eb05a5d1c75ea"
+                "reference": "66b2b2e18f7a00f7193252df743e39b74293c7f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg-app/api/zipball/dca1fdd98d247d2a05922347ae8eb05a5d1c75ea",
-                "reference": "dca1fdd98d247d2a05922347ae8eb05a5d1c75ea",
+                "url": "https://api.github.com/repos/pckg-app/api/zipball/66b2b2e18f7a00f7193252df743e39b74293c7f9",
+                "reference": "66b2b2e18f7a00f7193252df743e39b74293c7f9",
                 "shasum": ""
             },
             "require": {
@@ -329,7 +329,7 @@
             ],
             "description": "Core api for pckg apps",
             "homepage": "https://github.com/pckg-app/api",
-            "time": "2017-12-13T19:34:33+00:00"
+            "time": "2017-12-13T19:55:44+00:00"
         },
         {
             "name": "pckg/cache",
