@@ -2,6 +2,7 @@
 
 use GuzzleHttp\RequestOptions;
 use Pckg\Api\Api as PckgApi;
+use Pckg\Pendo\Api\Endpoint\Business;
 use Pckg\Pendo\Api\Endpoint\Company;
 use Pckg\Pendo\Api\Endpoint\Device;
 use Pckg\Pendo\Api\Endpoint\Invoice;
@@ -39,6 +40,14 @@ class Api extends PckgApi
     public function company()
     {
         return new Company($this);
+    }
+
+    /**
+     * @return Business
+     */
+    public function business()
+    {
+        return new Business($this);
     }
 
     /**

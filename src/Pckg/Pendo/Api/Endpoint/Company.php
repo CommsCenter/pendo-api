@@ -15,4 +15,14 @@ class Company extends Endpoint
      */
     protected $path = 'company';
 
+    /**
+     * @param array $data
+     *
+     * @return $this
+     */
+    public function register($data = [])
+    {
+        return $this->postAndDataResponse($data, 'company/register', 'company');
+    }
+
 }

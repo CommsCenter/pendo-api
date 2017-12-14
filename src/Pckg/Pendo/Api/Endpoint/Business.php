@@ -3,26 +3,26 @@
 use Pckg\Api\Endpoint;
 
 /**
- * Class Invoice
+ * Class Company
  *
  * @package Pckg\Pendo\Api\Endpoint
  */
-class Invoice extends Endpoint
+class Business extends Endpoint
 {
 
     /**
      * @var string
      */
-    protected $path = 'invoice';
+    protected $path = 'business';
 
     /**
      * @param array $data
      *
      * @return $this
      */
-    public function confirm($data = [])
+    public function register($data = [])
     {
-        return $this->postAndDataResponse($data, 'invoice/confirm', 'invoice');
+        return $this->postAndDataResponse($data, 'business/register', 'business');
     }
 
 }
