@@ -28,7 +28,7 @@ class Api extends PckgApi
 
         $this->requestOptions = [
             RequestOptions::HEADERS => [
-                'X-Impero-Api-Key' => $this->apiKey,
+                'X-Pendo-Api-Key' => $this->apiKey,
             ],
             RequestOptions::TIMEOUT => 5,
         ];
