@@ -25,4 +25,9 @@ class Company extends Endpoint
         return $this->postAndDataResponse($data, 'company/register', 'company');
     }
 
+    public function fetchFiscalizations()
+    {
+        return $this->getAndDataResponse('fiscalizations', 'fiscalizations');
+    }
+
 }
