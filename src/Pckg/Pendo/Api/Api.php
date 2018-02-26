@@ -30,7 +30,7 @@ class Api extends PckgApi
             RequestOptions::HEADERS => [
                 'X-Pendo-Api-Key' => $this->apiKey,
             ],
-            RequestOptions::TIMEOUT => 5,
+            RequestOptions::TIMEOUT => 15,
         ];
     }
 

@@ -22,7 +22,9 @@ class Invoice extends Endpoint
      */
     public function confirm($data = [])
     {
-        return $this->postAndDataResponse($data, 'invoice/confirm', 'invoice');
+        $response = $this->postAndDataResponse($data, 'invoice/confirm', 'invoice');
+
+        return $response;
     }
 
 }
