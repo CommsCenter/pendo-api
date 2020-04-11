@@ -2,11 +2,14 @@
 
 use GuzzleHttp\RequestOptions;
 use Pckg\Api\Api as PckgApi;
+use Pckg\Pendo\Api\Endpoint\App;
+use Pckg\Pendo\Api\Endpoint\AppKey;
 use Pckg\Pendo\Api\Endpoint\Business;
 use Pckg\Pendo\Api\Endpoint\Company;
 use Pckg\Pendo\Api\Endpoint\Device;
 use Pckg\Pendo\Api\Endpoint\ExchangeRate;
 use Pckg\Pendo\Api\Endpoint\Invoice;
+use Pckg\Pendo\Api\Endpoint\User;
 
 /**
  * Class Api
@@ -33,6 +36,11 @@ class Api extends PckgApi
             ],
             RequestOptions::TIMEOUT => 15,
         ];
+    }
+
+    public function setApiKey($apiKey)
+    {
+        $this->requestOptions[RequestOptions::HEADERS]['X-Pendo-Api-Key'] = $apiKey;
     }
 
     /**
@@ -73,6 +81,30 @@ class Api extends PckgApi
     public function exchangeRate()
     {
         return new ExchangeRate($this);
+    }
+
+    /**
+     * @return User
+     */
+    public function user()
+    {
+        return new User($this);
+    }
+
+    /**
+     * @return User
+     */
+    public function app()
+    {
+        return new App($this);
+    }
+
+    /**
+     * @return User
+     */
+    public function appKey()
+    {
+        return new AppKey($this);
     }
 
 }

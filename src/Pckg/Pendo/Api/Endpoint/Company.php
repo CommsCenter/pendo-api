@@ -22,7 +22,7 @@ class Company extends Endpoint
      */
     public function register($data = [])
     {
-        return $this->postAndDataResponse($data, 'company/register', 'company');
+        return $this->postAndDataResponse($data, 'company/register', 'company')->data();
     }
 
     public function fetchFiscalizations()
