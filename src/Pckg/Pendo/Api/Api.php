@@ -38,9 +38,11 @@ class Api extends PckgApi
         ];
     }
 
-    public function setApiKey($apiKey)
+    public function setApiKey(?string $apiKey): self
     {
         $this->requestOptions[RequestOptions::HEADERS]['X-Pendo-Api-Key'] = $apiKey;
+
+        return $this;
     }
 
     /**
